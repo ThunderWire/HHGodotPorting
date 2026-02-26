@@ -1,9 +1,8 @@
 using System;
 using System.Runtime.InteropServices;
+using GDK.XGamingRuntime.Interop;
 
-using Unity.XGamingRuntime.Interop;
-
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     public partial class SDK
     {

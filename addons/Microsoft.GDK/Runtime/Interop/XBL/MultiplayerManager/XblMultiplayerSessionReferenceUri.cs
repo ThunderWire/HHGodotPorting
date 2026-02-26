@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMultiplayerSessionReferenceUri
     //{
@@ -15,7 +15,7 @@ namespace Unity.XGamingRuntime.Interop
 
         internal string GetValue() { unsafe { fixed (Byte* ptr = this.value) { return Converters.BytePointerToString(ptr, XblInterop.XBL_MULTIPLAYER_SESSION_REFERENCE_URI_MAX_LENGTH); } } }
 
-        internal XblMultiplayerSessionReferenceUri(Unity.XGamingRuntime.XblMultiplayerSessionReferenceUri publicObject)
+        internal XblMultiplayerSessionReferenceUri(XGamingRuntime.XblMultiplayerSessionReferenceUri publicObject)
         {
             unsafe
             {

@@ -1,11 +1,11 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     internal class XGameInviteRegistrationToken : XRegistrationToken<Interop.XGameInviteEventCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XGameInviteEventCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XGameInviteEventCallback))]
         static void OnInvite(IntPtr context, string inviteUri)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);

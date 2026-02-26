@@ -1,6 +1,6 @@
 using System;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     public unsafe partial struct XblSocialRelationshipChangeEventArgs
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     // struct XAppBroadcastStatus
     // {
@@ -162,7 +162,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XIsAppBroadcastingChangedRegistrationToken : XRegistrationToken<Interop.XAppBroadcastMonitorCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XAppBroadcastMonitorCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XAppBroadcastMonitorCallback))]
         static void OnIsAppBroadcastingChanged(IntPtr context)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);
@@ -194,7 +194,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XMetadataPurgedToken : XRegistrationToken<Interop.XAppCaptureMetadataPurgedCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XAppCaptureMetadataPurgedCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XAppCaptureMetadataPurgedCallback))]
         static void OnXMetadataPurged(IntPtr context)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);

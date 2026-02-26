@@ -6,10 +6,10 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
+using GDK.XGamingRuntime.Interop;
 using Microsoft.CSharp;
-using Unity.XGamingRuntime.Interop;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     //enum class XGameRuntimeGameConfigSource : uint32_t
     //{

@@ -1,9 +1,9 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
-using Unity.XGamingRuntime.Interop;
+using GDK.XGamingRuntime.Interop;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     partial class SDK
     {

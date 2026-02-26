@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMultiplayerActivityRecentPlayerUpdate
     //{
@@ -15,7 +15,7 @@ namespace Unity.XGamingRuntime.Interop
         internal readonly UInt64 xuid;
         internal readonly XblMultiplayerActivityEncounterType encounterType;
 
-        internal XblMultiplayerActivityRecentPlayerUpdate(Unity.XGamingRuntime.XblMultiplayerActivityRecentPlayerUpdate publicObject)
+        internal XblMultiplayerActivityRecentPlayerUpdate(XGamingRuntime.XblMultiplayerActivityRecentPlayerUpdate publicObject)
         {
             this.xuid = publicObject.Xuid;
             this.encounterType = publicObject.EncounterType;

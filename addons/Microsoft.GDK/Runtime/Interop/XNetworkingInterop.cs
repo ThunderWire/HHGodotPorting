@@ -3,7 +3,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //struct XNetworkingConnectivityHint
     //{
@@ -91,7 +91,7 @@ namespace Unity.XGamingRuntime.Interop
     // Callback token classes.
     internal class XNetworkingRegisterConnectivityHintChangedCallbackToken : XRegistrationToken<Interop.XNetworkingConnectivityHintChangedCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XNetworkingConnectivityHintChangedCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XNetworkingConnectivityHintChangedCallback))]
         static void OnConnectivityHintChanged(IntPtr context, XNetworkingConnectivityHint connectivityHint)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);
@@ -123,7 +123,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XNetworkingPreferredLocalUdpMultiplayerPortChangedCallbackToken : XRegistrationToken<Interop.XNetworkingPreferredLocalUdpMultiplayerPortChangedCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XNetworkingPreferredLocalUdpMultiplayerPortChangedCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XNetworkingPreferredLocalUdpMultiplayerPortChangedCallback))]
         static void OnPreferredLocalUdpMultiplayerPortChanged(IntPtr context, UInt16 preferredLocalUdpMultiplayerPort)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);

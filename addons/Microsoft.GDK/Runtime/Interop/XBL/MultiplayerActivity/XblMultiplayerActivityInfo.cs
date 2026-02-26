@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMultiplayerActivityInfo
     //{
@@ -24,7 +24,7 @@ namespace Unity.XGamingRuntime.Interop
         internal readonly UTF8StringPtr groupId;
         internal readonly XblMultiplayerActivityPlatform platform;
 
-        internal XblMultiplayerActivityInfo(Unity.XGamingRuntime.XblMultiplayerActivityInfo publicObject, DisposableCollection disposableCollection)
+        internal XblMultiplayerActivityInfo(XGamingRuntime.XblMultiplayerActivityInfo publicObject, DisposableCollection disposableCollection)
         {
             this.xuid = publicObject.Xuid;
             this.connectionString = new UTF8StringPtr(publicObject.ConnectionString, disposableCollection);

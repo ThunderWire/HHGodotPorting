@@ -4,23 +4,18 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     internal static partial class XblInterop
     {
-#if (!UNITY_STANDALONE_WIN && ENABLE_IL2CPP)
-        public const string XblThunkDllName = "__Internal";
-#elif UNITY_GDK_MOCK_XBL
-        public const string XblThunkDllName = "Microsoft.Xbox.Services.GDK.C.Thunks.Mock";
-#else
-        public const string XblThunkDllName = "Microsoft.Xbox.Services.GDK.C.Thunks";
-#endif
+        
+        public const string XblThunkDllName = "XGamingRuntimeThunks";
+        //public const string XblThunkDllName = "Microsoft.Xbox.Services.GDK.C.Thunks.Mock";
+        //public const string XblThunkDllName = "Microsoft.Xbox.Services.GDK.C.Thunks";
 
-#if (!UNITY_STANDALONE_WIN && ENABLE_IL2CPP)
-        public const string HttpClientGdkDll = "__Internal";
-#else
+        //public const string HttpClientGdkDll = "__Internal";
         public const string HttpClientGdkDll = "libHttpClient.GDK";
-#endif
+        
         #region Xbox live size constants from types_c.h
         //#define XBL_COLOR_CHAR_SIZE                     (7 * 3)
         internal const Int32 XBL_COLOR_CHAR_SIZE = (7 * 3);

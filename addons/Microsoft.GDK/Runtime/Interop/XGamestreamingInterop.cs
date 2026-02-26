@@ -2,7 +2,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     internal struct XGameStreamingClientId
     {
@@ -98,7 +98,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XGameStreamingConnectionStateChangedToken : XRegistrationToken<Interop.XGameStreamingConnectionStateChangedCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XGameStreamingConnectionStateChangedCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XGameStreamingConnectionStateChangedCallback))]
         static void OnConnectionStateChanged(IntPtr context, Interop.XGameStreamingClientId client, XGameStreamingConnectionState state)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);
@@ -129,7 +129,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XGameStreamingRegisterClientPropertiesChangedToken : XRegistrationToken<Interop.XGameStreamingClientPropertiesChangedCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XGameStreamingClientPropertiesChangedCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XGameStreamingClientPropertiesChangedCallback))]
         static void OnClientPropertiesChanged(IntPtr context,
             Interop.XGameStreamingClientId client,
             UInt32 updatedPropertiesCount,

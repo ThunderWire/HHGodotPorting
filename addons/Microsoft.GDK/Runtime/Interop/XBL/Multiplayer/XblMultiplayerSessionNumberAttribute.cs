@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMultiplayerSessionNumberAttribute
     //{
@@ -17,7 +17,7 @@ namespace Unity.XGamingRuntime.Interop
 
         internal string GetName() { unsafe { fixed (Byte* ptr = this.name) { return Converters.BytePointerToString(ptr, XblInterop.XBL_MULTIPLAYER_SEARCH_HANDLE_MAX_FIELD_LENGTH); } } }
 
-        internal XblMultiplayerSessionNumberAttribute(Unity.XGamingRuntime.XblMultiplayerSessionNumberAttribute publicObject)
+        internal XblMultiplayerSessionNumberAttribute(XGamingRuntime.XblMultiplayerSessionNumberAttribute publicObject)
         {
             unsafe
             {

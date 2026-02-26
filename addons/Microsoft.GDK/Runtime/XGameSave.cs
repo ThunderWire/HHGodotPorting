@@ -6,10 +6,10 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Linq;
 using System.Text;
+using GDK.XGamingRuntime.Interop;
 using Microsoft.CSharp;
-using Unity.XGamingRuntime.Interop;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     public class XGameSaveBlobInfo
     {

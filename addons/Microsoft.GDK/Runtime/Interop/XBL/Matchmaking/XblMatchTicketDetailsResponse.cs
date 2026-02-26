@@ -1,6 +1,6 @@
 using System;
 using System.Runtime.InteropServices;
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMatchTicketDetailsResponse
     //{

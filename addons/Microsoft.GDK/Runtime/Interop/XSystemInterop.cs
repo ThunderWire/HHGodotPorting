@@ -4,7 +4,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //struct XVersion
     //{
@@ -70,7 +70,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XSystemHandleCallbackHandle : XRegistrationToken<Interop.XSystemHandleCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XSystemHandleCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XSystemHandleCallback))]
         static void OnHandle(IntPtr handle,
             XSystemHandleType type,
             XSystemHandleCallbackReason reason,

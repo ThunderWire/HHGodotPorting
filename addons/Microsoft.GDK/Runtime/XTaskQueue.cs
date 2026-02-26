@@ -1,9 +1,9 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Threading;
-using Unity.XGamingRuntime.Interop;
+using GDK.XGamingRuntime.Interop;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     //enum class XTaskQueueDispatchMode : uint32_t
     //{

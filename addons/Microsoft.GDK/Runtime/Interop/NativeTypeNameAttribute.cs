@@ -3,7 +3,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     [Conditional("DEBUG")]
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter | AttributeTargets.ReturnValue | AttributeTargets.Enum, AllowMultiple = false, Inherited = true)]

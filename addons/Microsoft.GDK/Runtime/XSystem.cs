@@ -3,9 +3,9 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Text;
-using Unity.XGamingRuntime.Interop;
+using GDK.XGamingRuntime.Interop;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     //enum class XSystemDeviceType : uint32_t {
     //    Unknown              = 0x00,

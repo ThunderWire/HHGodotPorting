@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMultiplayerPerformQoSMeasurementsArgs
     //{
@@ -16,7 +16,7 @@ namespace Unity.XGamingRuntime.Interop
 
         internal T[] GetRemoteClients<T>(Func<XblMultiplayerConnectionAddressDeviceTokenPair,T> ctor) { unsafe { return Converters.PtrToClassArray<T, XblMultiplayerConnectionAddressDeviceTokenPair>((IntPtr)this.remoteClients, this.remoteClientsSize, ctor); } }
 
-        internal XblMultiplayerPerformQoSMeasurementsArgs(Unity.XGamingRuntime.XblMultiplayerPerformQoSMeasurementsArgs publicObject, DisposableCollection disposableCollection)
+        internal XblMultiplayerPerformQoSMeasurementsArgs(XGamingRuntime.XblMultiplayerPerformQoSMeasurementsArgs publicObject, DisposableCollection disposableCollection)
         {
             unsafe
             {

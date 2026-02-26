@@ -1,4 +1,4 @@
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     public unsafe partial struct XblServiceConfigurationStatistic
     {

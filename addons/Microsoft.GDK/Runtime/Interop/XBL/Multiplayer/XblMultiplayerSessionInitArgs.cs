@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMultiplayerSessionInitArgs
     //{
@@ -21,7 +21,7 @@ namespace Unity.XGamingRuntime.Interop
         internal readonly SizeT InitiatorXuidsCount;
         internal readonly UTF8StringPtr CustomJson;
 
-        internal XblMultiplayerSessionInitArgs(Unity.XGamingRuntime.XblMultiplayerSessionInitArgs publicObject, DisposableCollection disposableCollection)
+        internal XblMultiplayerSessionInitArgs(XGamingRuntime.XblMultiplayerSessionInitArgs publicObject, DisposableCollection disposableCollection)
         {
             this.MaxMembersInSession = publicObject.MaxMembersInSession;
             this.Visibility = publicObject.Visibility;

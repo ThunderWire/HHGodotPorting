@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMultiplayerSessionQuery
     //{
@@ -38,7 +38,7 @@ namespace Unity.XGamingRuntime.Interop
         XblMultiplayerSessionVisibility VisibilityFilter;
         UInt32 ContractVersionFilter;
 
-        internal XblMultiplayerSessionQuery(Unity.XGamingRuntime.XblMultiplayerSessionQuery publicObject, DisposableCollection disposableCollection)
+        internal XblMultiplayerSessionQuery(XGamingRuntime.XblMultiplayerSessionQuery publicObject, DisposableCollection disposableCollection)
         {
             this.Scid = Converters.StringToNullTerminatedUTF8ByteArray(publicObject.Scid ?? "", XblInterop.XBL_SCID_LENGTH);
             this.MaxItems = publicObject.MaxItems;

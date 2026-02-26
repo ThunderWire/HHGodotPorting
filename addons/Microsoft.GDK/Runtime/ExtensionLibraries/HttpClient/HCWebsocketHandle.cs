@@ -1,9 +1,9 @@
 using System;
 using System.Net.WebSockets;
 using System.Runtime.InteropServices;
-using Unity.XGamingRuntime.Interop;
+using GDK.XGamingRuntime.Interop;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     public class HCWebsocketHandle : EquatableHandle
     {

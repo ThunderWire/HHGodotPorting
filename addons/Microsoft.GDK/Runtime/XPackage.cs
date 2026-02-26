@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
-using Unity.XGamingRuntime.Interop;
+using GDK.XGamingRuntime.Interop;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     // enum class XPackageChunkSelectorType : uint32_t
     // {

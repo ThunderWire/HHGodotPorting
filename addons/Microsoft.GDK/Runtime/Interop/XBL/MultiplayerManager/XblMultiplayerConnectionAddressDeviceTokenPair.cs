@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMultiplayerConnectionAddressDeviceTokenPair
     //{
@@ -14,7 +14,7 @@ namespace Unity.XGamingRuntime.Interop
         internal readonly UTF8StringPtr connectionAddress;
         internal readonly XblDeviceToken deviceToken;
 
-        internal XblMultiplayerConnectionAddressDeviceTokenPair(Unity.XGamingRuntime.XblMultiplayerConnectionAddressDeviceTokenPair publicObject, DisposableCollection disposableCollection)
+        internal XblMultiplayerConnectionAddressDeviceTokenPair(XGamingRuntime.XblMultiplayerConnectionAddressDeviceTokenPair publicObject, DisposableCollection disposableCollection)
         {
             this.connectionAddress = new UTF8StringPtr(publicObject.ConnectionAddress, disposableCollection);
             this.deviceToken = new XblDeviceToken(publicObject.DeviceToken);

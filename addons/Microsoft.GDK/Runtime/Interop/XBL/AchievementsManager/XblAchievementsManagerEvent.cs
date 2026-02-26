@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     /// <summary>
     /// An achievement event that will be returned from <see cref="XblAchievementsManagerDoWork"/>.

@@ -1,0 +1,19 @@
+using System;
+using GDK.XGamingRuntime.Interop;
+
+
+namespace GDK.XGamingRuntime
+{
+
+    public class XblMultiplayerSessionInitArgs
+    {
+        public XblMultiplayerSessionInitArgs()
+        {
+        }
+
+        public UInt32 MaxMembersInSession { get; set; }
+        public  XblMultiplayerSessionVisibility Visibility { get; set; }
+        public UInt64[] InitiatorXuids { get; set; }
+        public string CustomJson { get; set; }
+    }
+}

@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblTournamentTeamResult
     //{
@@ -14,7 +14,7 @@ namespace Unity.XGamingRuntime.Interop
         internal readonly UTF8StringPtr Team;
         internal readonly XblTournamentGameResultWithRank GameResult;
 
-        internal XblTournamentTeamResult(Unity.XGamingRuntime.XblTournamentTeamResult publicObject, DisposableCollection disposableCollection)
+        internal XblTournamentTeamResult(XGamingRuntime.XblTournamentTeamResult publicObject, DisposableCollection disposableCollection)
         {
             this.Team = new UTF8StringPtr(publicObject.Team, disposableCollection);
             this.GameResult = new XblTournamentGameResultWithRank(publicObject.GameResult);

@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     public class HR : Interop.HR {
         public const Int32 E_FAIL = unchecked((Int32)0x80004005);

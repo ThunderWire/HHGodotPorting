@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-using Unity.XGamingRuntime.Interop;
+using GDK.XGamingRuntime.Interop;
 
 // This file contains overloads for GDK wrappers that make calling certain APIs easier
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     public partial class SDK
     {

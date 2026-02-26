@@ -1,7 +1,7 @@
 using System;
-using Unity.XGamingRuntime.Interop;
+using GDK.XGamingRuntime.Interop;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     //enum class HCWebSocketCloseStatus : uint32_t
     //{

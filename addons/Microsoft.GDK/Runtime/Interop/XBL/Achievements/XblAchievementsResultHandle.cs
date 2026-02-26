@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     /// <summary>
     /// A handle to an achievement result. This handle is used by other APIs to get the achievement objects

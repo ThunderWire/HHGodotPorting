@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblDeviceToken
     //{
@@ -14,7 +14,7 @@ namespace Unity.XGamingRuntime.Interop
 
         internal string GetValue() { unsafe { fixed (Byte* ptr = this.Value) { return Converters.BytePointerToString(ptr, 40); } } }
 
-        internal XblDeviceToken(Unity.XGamingRuntime.XblDeviceToken publicObject)
+        internal XblDeviceToken(XGamingRuntime.XblDeviceToken publicObject)
         {
             unsafe
             {

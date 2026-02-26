@@ -4,7 +4,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //struct XPackageChunkSelector
     //{
@@ -112,7 +112,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XPackageRegisterPackageInstalledToken : XRegistrationToken<Interop.XPackageInstalledCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XPackageInstalledCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XPackageInstalledCallback))]
         static void OnPackageInstalled(IntPtr context, Interop.XPackageDetails details)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);
@@ -144,7 +144,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XPackageRegisterInstallationProgressChangedToken : XRegistrationToken<Interop.XPackageInstallationProgressCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XPackageInstallationProgressCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XPackageInstallationProgressCallback))]
         static void OnInstallationProgress(IntPtr context, IntPtr monitor)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);

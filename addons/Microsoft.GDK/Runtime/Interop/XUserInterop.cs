@@ -4,7 +4,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     internal struct XUserLocalId
     {
@@ -125,7 +125,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XUserChangeRegistrationToken : XRegistrationToken<Interop.XUserChangeEventCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XUserChangeEventCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XUserChangeEventCallback))]
         static void OnChangeEvent(IntPtr context, XUserLocalId userLocalId, XUserChangeEvent changeEvent)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);
@@ -157,7 +157,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XUserDefaultAudioEndpointUtf16RegistrationToken : XRegistrationToken<Interop.XUserDefaultAudioEndpointUtf16ChangedCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XUserDefaultAudioEndpointUtf16ChangedCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XUserDefaultAudioEndpointUtf16ChangedCallback))]
         static void OnDefaultAudioEndpointUtf16Changed(
             IntPtr context,
             XUserLocalId user,
@@ -192,7 +192,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XUserDeviceAssociationChangedRegistrationToken : XRegistrationToken<Interop.XUserDeviceAssociationChangedCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XUserDeviceAssociationChangedCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XUserDeviceAssociationChangedCallback))]
         static void DeviceAssociationChanged(IntPtr context, ref Interop.XUserDeviceAssociationChange change)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);

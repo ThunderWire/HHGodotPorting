@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMultiplayerMemberInitialization
     //{
@@ -20,7 +20,7 @@ namespace Unity.XGamingRuntime.Interop
         internal readonly NativeBool ExternalEvaluation;
         internal readonly UInt32 MembersNeededToStart;
 
-        internal XblMultiplayerMemberInitialization(Unity.XGamingRuntime.XblMultiplayerMemberInitialization publicObject)
+        internal XblMultiplayerMemberInitialization(XGamingRuntime.XblMultiplayerMemberInitialization publicObject)
         {
             this.JoinTimeout = publicObject.JoinTimeout;
             this.MeasurementTimeout = publicObject.MeasurementTimeout;

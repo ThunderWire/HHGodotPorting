@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMultiplayerPeerToPeerRequirements
     //{
@@ -14,7 +14,7 @@ namespace Unity.XGamingRuntime.Interop
         internal readonly UInt64 LatencyMaximum;
         internal readonly UInt64 BandwidthMinimumInKbps;
 
-        internal XblMultiplayerPeerToPeerRequirements(Unity.XGamingRuntime.XblMultiplayerPeerToPeerRequirements publicObject)
+        internal XblMultiplayerPeerToPeerRequirements(XGamingRuntime.XblMultiplayerPeerToPeerRequirements publicObject)
         {
             this.LatencyMaximum = publicObject.LatencyMaximum;
             this.BandwidthMinimumInKbps = publicObject.BandwidthMinimumInKbps;

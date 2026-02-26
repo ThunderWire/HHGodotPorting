@@ -2,7 +2,7 @@
 
 using System;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     public class HR
     {

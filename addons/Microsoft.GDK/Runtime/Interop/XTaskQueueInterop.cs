@@ -3,11 +3,11 @@ using System;
 using System.Runtime.InteropServices;
 using System.Threading;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     internal class XTaskQueueWaiterCallbackHandle : XRegistrationToken<Interop.XTaskQueueCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XTaskQueueCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XTaskQueueCallback))]
         static void OnWaiter(IntPtr context, bool canceled)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);
@@ -45,7 +45,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XTaskQueueMonitorCallbackHandle : XRegistrationToken<Interop.XTaskQueueMonitorCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XTaskQueueMonitorCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XTaskQueueMonitorCallback))]
         static void OnMonitor(IntPtr context, IntPtr queue, XTaskQueuePort port)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);
@@ -83,7 +83,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XTaskQueueCallbackHandle : XRegistrationToken<Interop.XTaskQueueCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XTaskQueueCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XTaskQueueCallback))]
         static void OnCallback(IntPtr context, bool canceled)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);
@@ -103,7 +103,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class XTaskQueueTerminateCallbackHandle : XRegistrationToken<Interop.XTaskQueueTerminatedCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XTaskQueueTerminatedCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XTaskQueueTerminatedCallback))]
         static void OnTerminate(IntPtr context)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);

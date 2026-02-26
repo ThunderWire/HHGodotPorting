@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //struct XStoreCanAcquireLicenseResult
     //{
@@ -309,7 +309,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class GameLicenseChangedCallbackToken : XRegistrationToken<Interop.XStoreGameLicenseChangedCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XStoreGameLicenseChangedCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XStoreGameLicenseChangedCallback))]
         static void OnGameLicenseChanged(IntPtr context)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);
@@ -346,7 +346,7 @@ namespace Unity.XGamingRuntime.Interop
 
     internal class PackageLicenseLostCallbackToken : XRegistrationToken<Interop.XStorePackageLicenseLostCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XStorePackageLicenseLostCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XStorePackageLicenseLostCallback))]
         static void OnPackageLicenseLostCallback(IntPtr context)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);

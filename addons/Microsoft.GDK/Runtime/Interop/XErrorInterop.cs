@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     // typedef bool CALLBACK XErrorCallback(_In_ HRESULT hr, _In_z_ const char* msg, _In_opt_ void* context);
     [UnmanagedFunctionPointer(CallingConvention.StdCall)]

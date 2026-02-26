@@ -1,10 +1,10 @@
 using System;
 using System.Threading;
-using Unity.XGamingRuntime.Interop;
+using GDK.XGamingRuntime.Interop;
 
 // This file contains overloads for GDK wrappers that make calling certain APIs easier
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     public delegate void XNetworkingQueryPreferredLocalUdpMultiplayerPortResultFunction(Int32 errorCode, UInt16 preferredLocalUdpMultiplayerPort);
     public delegate void XGameSaveGetRemainingQuotaCompleted(int hr, long remainingQuota);

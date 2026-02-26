@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMultiplayerSessionReference
     //{
@@ -20,7 +20,7 @@ namespace Unity.XGamingRuntime.Interop
         internal string GetSessionTemplateName() { unsafe { fixed (Byte* ptr = this.SessionTemplateName) { return Converters.BytePointerToString(ptr, 100); } } }
         internal string GetSessionName() { unsafe { fixed (Byte* ptr = this.SessionName) { return Converters.BytePointerToString(ptr, 100); } } }
 
-        internal XblMultiplayerSessionReference(Unity.XGamingRuntime.XblMultiplayerSessionReference publicObject)
+        internal XblMultiplayerSessionReference(XGamingRuntime.XblMultiplayerSessionReference publicObject)
         {
             unsafe
             {

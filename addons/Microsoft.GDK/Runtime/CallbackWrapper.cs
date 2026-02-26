@@ -3,7 +3,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     public class CallbackWrapper<T> : IDisposable where T : Delegate
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     public class XTaskQueuePortHandle : EquatableHandle
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     /// <summary>
     /// Represents a null-terminated UTF-8 char* whose _pointer value_ is marshalled between managed and unmanaged code.

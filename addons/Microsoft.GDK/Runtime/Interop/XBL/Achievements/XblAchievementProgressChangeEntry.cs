@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     /// <summary>
     /// An entry for XblAchievementProgressChangeEventArgs representing a progress update for a single achievement.

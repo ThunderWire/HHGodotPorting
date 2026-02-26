@@ -3,7 +3,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     public abstract class EquatableHandle : SafeHandle
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     [Obsolete("XRegistrationToken has been removed. " +
         "If you are upgrading from a legacy package, please refer to the migration guide.", true)]

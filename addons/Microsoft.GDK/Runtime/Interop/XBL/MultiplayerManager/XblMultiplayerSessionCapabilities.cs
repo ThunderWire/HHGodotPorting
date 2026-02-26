@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMultiplayerSessionCapabilities
     //{
@@ -32,7 +32,7 @@ namespace Unity.XGamingRuntime.Interop
         internal readonly NativeBool Searchable;
         internal readonly NativeBool HasOwners;
 
-        internal XblMultiplayerSessionCapabilities(Unity.XGamingRuntime.XblMultiplayerSessionCapabilities publicObject)
+        internal XblMultiplayerSessionCapabilities(XGamingRuntime.XblMultiplayerSessionCapabilities publicObject)
         {
             this.Connectivity = new NativeBool(publicObject.Connectivity);
             this.Team = new NativeBool(publicObject.Team);

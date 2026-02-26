@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef struct XblMultiplayerManagerMember
     //{
@@ -34,7 +34,7 @@ namespace Unity.XGamingRuntime.Interop
         internal readonly UTF8StringPtr PropertiesJson;
         internal readonly UTF8StringPtr DeviceToken;
 
-        internal XblMultiplayerManagerMember(Unity.XGamingRuntime.XblMultiplayerManagerMember publicObject, DisposableCollection disposableCollection)
+        internal XblMultiplayerManagerMember(XGamingRuntime.XblMultiplayerManagerMember publicObject, DisposableCollection disposableCollection)
         {
             this.MemberId = publicObject.MemberId;
             this.TeamId = new UTF8StringPtr(publicObject.TeamId, disposableCollection);

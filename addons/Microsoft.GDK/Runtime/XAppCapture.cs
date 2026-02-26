@@ -2,10 +2,10 @@
 
 using System;
 using System.Runtime.InteropServices;
-using Unity.XGamingRuntime.Interop;
 using System.Collections.Generic;
+using GDK.XGamingRuntime.Interop;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     // enum class XAppCaptureScreenshotFormatFlag : uint16_t
     // {

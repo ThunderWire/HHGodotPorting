@@ -3,11 +3,11 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     internal class XGameProtocolActivationToken : XRegistrationToken<Interop.XGameProtocolActivationCallback>
     {
-        [AOT.MonoPInvokeCallback(typeof(Interop.XGameProtocolActivationCallback))]
+        //[AOT.MonoPInvokeCallback(typeof(Interop.XGameProtocolActivationCallback))]
         static void OnProtocolActivation(IntPtr context, string protocolUri)
         {
             GCHandle gcHandle = GCHandle.FromIntPtr(context);

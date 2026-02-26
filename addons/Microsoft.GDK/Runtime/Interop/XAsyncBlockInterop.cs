@@ -2,7 +2,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     //typedef void CALLBACK XAsyncCompletionRoutine(_Inout_ struct XAsyncBlock* asyncBlock);
     [UnmanagedFunctionPointer(CallingConvention.StdCall)]

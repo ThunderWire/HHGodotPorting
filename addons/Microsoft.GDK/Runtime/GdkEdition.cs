@@ -1,6 +1,6 @@
 using System;
 
-namespace Unity.XGamingRuntime
+namespace GDK.XGamingRuntime
 {
     partial class SDK
     {

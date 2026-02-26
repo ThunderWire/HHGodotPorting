@@ -3,10 +3,10 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Unity.XGamingRuntime.Interop
+namespace GDK.XGamingRuntime.Interop
 {
     public static class XGamingRuntimeInterop
     {
-        public const string ThunkDllName = "XGameRuntime.Thunks";
+        public const string ThunkDllName = "XGamingRuntimeThunks";
     }
 }
